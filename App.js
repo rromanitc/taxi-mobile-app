@@ -1,22 +1,29 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Main from './src/main'
+import { StyleSheet, View } from 'react-native';
+import Root from './src/main'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Main></Main>
-      </View>
-    );
-  }
+export default class TaxiApp extends React.Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <Root {...this.props}/>
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
   },
 });

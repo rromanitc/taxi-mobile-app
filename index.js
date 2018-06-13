@@ -1,3 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
-AppRegistry.registerComponent('taxiMobApp', () => App);
+import TaxiApp from "./App";
+
+AppRegistry.registerComponent('taxiMobApp', () => TaxiApp);
